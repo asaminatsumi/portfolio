@@ -1,0 +1,517 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+
+  font-size: 100%;
+
+}
+body {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  color: #3d3d3d;
+}
+a {
+  text-decoration: none !important;
+}
+
+image {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+/* ファーストビュー
+------------------------------- */
+#fv {
+  background-image: url(images/fv-bg.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  padding:5% 2%;
+}
+.h1-sp {
+  display: none;
+}
+h1 {
+  color: #FFFFFF;
+  padding-top: 7%; 
+  font-size: 34px;
+  line-height: 2.3;
+}
+.big-ttl {
+  font-size: 70px;
+  font-weight: 500;
+  background: linear-gradient(transparent 60%, #FFB053 60%);
+  border-radius: 80% 50% 60% 5%/80% 75% 15% 75%;
+}
+.three-circles-pc {
+  display: flex;
+  margin-top: 5rem;  
+}
+.three-circles-sp { 
+  display: none;
+}
+.circle {
+  display: inline-block;
+  background: linear-gradient(to bottom, #FFDE59, #FF914D);
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: bolder;
+  width: 225px;
+  height: 225px;
+  font-size: 20px;
+  margin-right: 30px;
+  text-align:center;
+  padding-top: 90px;
+  box-shadow: 25px 25px 25px 0 rgba(0, 0, 0, .5);
+  text-shadow: 2px 2px 10px  #8b4012;
+}
+#two-lines {
+  padding-top: 80px;
+}
+
+/* お悩み
+------------------------------- */
+#worries h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: normal;
+}
+#worries {
+  background-color: #FCFFEF;
+  padding-bottom: 70px;
+}
+.contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.list {
+  margin: auto 0;
+  list-style: none;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.women-img {
+  width: 400px;
+
+}
+#worries p {
+  background-color: #C6D787;
+  text-align: center;
+  font-size: 32px;
+  padding: 20px;
+}
+
+
+/* 解決
+------------------------------- */
+#solution {
+  background-color: #FFEAD2;
+  padding-bottom: 70px;
+}
+#solution p {
+  background-color: #FFB053;
+  text-align: center;
+  font-size: 32px;
+  padding: 20px;
+}
+#solution .contents {
+  padding-top: 20px;
+}
+
+
+/* 購入エリア
+------------------------------- */
+#btn-area  {
+  background-image: url(images/btn-bg.png);
+  background-size: cover;
+  padding: 70px 0;
+}
+.price-area {
+  background-color: #FFF; 
+  padding: 35px 70px; 
+  position: relative;
+}
+.price-area h2 {
+  display: inline-block;
+  font-weight: normal;
+  background-color: #C6D787;
+  width: 330px;
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.price-contents {
+  display: flex;
+  justify-content: center;
+}
+.original {
+  font-size: 22px;
+  width: 58px;
+  line-height: 1.3;
+}
+.original-price {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 43px;
+  text-decoration: line-through;
+}
+.original-area {
+  display: flex;
+}
+.tax {
+  font-size: 18px;
+  line-height: 1;
+}
+.en {
+  font-size: 26px;
+  text-align: center;
+}
+.off-circle {
+  color: #FFF;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background-color: #FFB053;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .5);
+  text-align: center;
+  padding-top: 18px;
+  font-family:  "Noto Sans JP", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 300;
+  position: absolute;
+  top :13%;
+  right: 13%;
+  
+}
+.off-circle span {
+  font-size: 27px;
+}
+.special  {
+  position: relative;
+ }
+
+.special p{
+  position: absolute;
+  bottom: 20px;
+  font-size: 24px;
+  width: 90px;  
+  background: linear-gradient(70deg, #C6D787 0%, #C6D787 70%, #FFF 70%, #FFF 100%);
+}
+
+.special-price {
+  margin-left: 90px;
+}
+.special-price span {
+  font-size: 93px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
+  font-family: "Noto Sans JP", sans-serif;
+}
+.special-price {
+  font-size: 43px;
+}
+.special-area {
+  display: flex;
+}
+button {
+  display: block;
+  font-size: 30px;
+  width:375px;
+  height: 78px;
+  background-color: #C6D787;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .5);
+  margin: 10px 0;
+}
+
+/* point
+------------------------------- */
+#point1 {
+  background-image: url(images/point1-bg.png);
+  background-size: contain;
+  padding: 5% 0 ;
+}
+.point {
+  display: flex;
+}
+#point1 img {
+  padding: 5% 0;
+  max-width: 80%;
+}
+.point-circle {
+  color: #FFF;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 22px;
+  position: relative;
+  background-color: #FFB053;
+}
+.point-circle span {
+  font-size: 38px;
+}
+.border-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3d3d3d;
+  position: absolute;
+  top:3px;
+  left: 3px;
+}
+.sentence {
+  font-size: 26px;
+  font-weight: 600;
+  width: 85%; 
+  margin: auto 0 auto 30px; 
+}
+#point1 img {
+  display: block;
+  margin: 10px auto;
+}
+.pc { 
+  display: block !important;
+}
+.sp { 
+  display: none !important;
+}
+
+#point2 {
+  background-image: url(images/point2-bg.png);
+  background-size:cover;
+  padding: 120px 0;
+}
+#point2 img {
+  display: block;
+  margin: 5% auto;
+}
+#point3 {
+  margin-top: 50px;
+}
+#point3 .point {
+  margin-bottom: 50px;
+}
+
+#point3 ul {
+  list-style: none; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#point3 li {
+  background-color: #FFB053;
+  padding: 15px 40px;
+  white-space: nowrap;
+  margin: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#point3 img {
+  width: 100%;
+  height: auto;
+  margin: 8% 0;
+}
+
+/* voices
+------------------------------- */
+#voices {
+  background-image: url(images/voice-bg.png);
+  background-size: cover;
+  padding: 70px 0;
+}
+#voices h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.voice-contents {
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+.person img {
+  width: 110px;
+  height: 110px;
+}
+.voice {
+  width: 360px;
+  margin:0 50px;
+}
+
+
+/* モバイル版
+------------------------*/
+@media (max-width: 600px) {
+  h2 p  {
+    text-align: center;
+  }
+  #fv {
+    min-height: 70vh;
+  }
+  .h1-pc {
+    display: none;
+  }
+  .big-ttl {
+    font-size: 45px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .h1-sp {
+    display: inline-block;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 3%;
+  }
+  .three-circles-sp {
+    display: flex;
+    margin: 3rem auto;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;  
+  }
+  .three-circles-pc {
+    display: none;
+  }
+  .circle {
+    margin: 0.5rem auto;
+    width: 160px;
+    height: 160px;
+    font-size: 18px;
+    padding-top: 50px;
+  }
+  .contents {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .women-img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #worries p {
+    font-size: 18px;
+  }
+  #solution p {
+    font-size: 18px;
+  }
+  .list {
+    font-size: 14px;
+  }
+  .price-area {
+    padding: 10% 0;
+    width: 350px;
+  }
+  .price-area h2 {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .price-contents {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .original-area {
+    justify-content: center;
+  }
+  .original  {
+    font-size: 20px;
+  }
+
+  
+  .special-area {
+    justify-content: center;
+  }
+  .special-price span {
+    font-size: 60px;
+  }
+  .special-price  {
+    font-size: 25px;
+    margin-left: 95px;
+  }
+  .special p {
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+  button {
+    width: 270px;
+    font-size: 18px;
+    margin: 10px auto;
+  }
+  .off-circle {
+    right: 10px;
+    top: 120px
+  }
+  #point1 {
+    background-image: url(images/point1-bg-sp.png);
+    background-size: cover;
+  }
+  .pc { 
+    display: none !important;
+  }
+  .sp { 
+    display: block !important;
+  }
+  .point {
+    flex-direction: column;
+  }
+  .point-circle {
+    margin: 0 auto;
+  }
+  
+ .sentence {
+  font-size: 18px;
+  margin: 7% auto;
+ }
+ #point2 img {
+  width: 100%;
+ }
+ #point3 ul {
+  flex-direction: column;
+ }
+ #point3 li {
+  margin: 5px auto;
+  text-align: center;
+  width: 60%;
+ }
+#point3 .point {
+  margin-bottom: 10px;
+}
+#voices {
+  background-image: url(images/voice-bg-sp.png);
+  padding: 100px 0; 
+
+}
+.voice-contents {
+  flex-direction: column;
+  margin: 30px;
+}
+.person {
+  margin: 10px auto;
+}
+.voice {
+  margin: 0 auto;
+  width: 90%;
+}
+#worries h2 {
+  font-size: 20px;
+}
+#voices h2 {
+  font-size: 20px;
+  margin-top: 80px;
+}
+}

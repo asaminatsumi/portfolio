@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*
+Theme Name: NATSUKAZE-theme
+*/ 
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+} 
+body {
+  font-family: "Shippori Mincho B1", serif;
+  line-height: 1.7;
+  color: #3d3d3d;
+}
+a {
+  text-decoration: transparent !important;
+  color: #3d3d3d
+}
+image {
+  max-width: 100%;
+}
+.wrapper {
+  max-width:1000px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+section {
+  margin: 3em 0;
+}
+.sp-only {
+  display: none;
+}
+
+/* fv
+------------------------------- */  
+#fv {
+  background-image: url(images/fv-pc.png);
+  background-size: cover;
+  height: 100vh;
+  background-position: 70% 70%;
+}
+.fv-p {
+  text-shadow:4px 4px 10px #678EA0;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 40%;
+}
+.fv-ttl {
+  text-shadow:4px 4px 10px #678EA0;
+  font-size: 75px;
+  color: #fff;
+}
+
+/* menu
+------------------------------- */  
+.menu{
+  height:120px;
+  padding: 2em;
+}
+.menu-area {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.menu .logo  {
+  width:100px;
+  display:block;
+}
+.link {
+  display:flex;
+}
+.link-list {
+  padding-left:50px;
+  list-style:none;
+}
+.sns {
+  display:flex;
+}
+.sns-list {
+  padding-left:30px;
+  list-style:none;
+}
+.sns-list img {
+  width:50px;
+}
+
+
+/* section1
+------------------------------- */  
+#section1 {
+  background-image: url(images/section1-bg.png);
+  background-size: cover;
+  min-height: 700px;
+}
+.subttl {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 35%;
+  height: fit-content;
+}
+#section1 .subttl {
+  justify-content: left;
+}
+.subttl-sentence {
+  writing-mode: vertical-rl;
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: normal;
+  font-size: 40px;
+}
+.sentence {
+  font-size: 20px;
+}
+.line{
+  border-left:2px solid #8b8b8b; 
+}  
+#section1 img {
+  display:block;
+  margin-top:3rem;
+}
+.container {
+  display: flex;
+}
+.vertical-p-img {
+  width: 60%;
+
+} 
+
+
+/* section2
+------------------------------- */  
+#section2 {
+  background-image: url(images/section2-bg.png);
+  background-size: cover;
+  min-height: 700px;
+  background-position:70% 20%;
+}
+#section2 .container {
+  flex-direction: row-reverse;
+}
+#section2 img {
+  width: 100%;
+  padding: 3em;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* section3
+------------------------------- */  
+#section3 {
+  background-image: url(images/section3-bg.png);
+  background-size: cover;
+  min-height: 800px;
+}
+#section3 .subttl .right{
+  border-left:2px solid #8b8b8b;
+  border-right:2px solid #8b8b8b;
+}
+#section3 .subttl .left{
+  border-left:2px solid #8b8b8b;
+}
+#section3 .subttl {
+  margin: 0 auto;
+  justify-content: center;
+}
+.number{
+  color:rgba(61,61,61,0.3); 
+  font-size: 100px;
+}
+
+.food {
+    position:relative;
+    height: 800px;
+}
+#section3 img {
+  padding: 0;
+}
+.food-item {
+  position:absolute;
+  display: flex;
+}
+.food-p p {
+  text-align: center;
+}
+.sushi {
+  top:0;
+  left:0;
+  flex-direction: row-reverse;
+}
+.karaage {
+  top:10%;
+  left:60%;
+  flex-direction: row-reverse;
+}
+.pizza {
+  top:50%;
+  left:10%;
+}
+.cheese {
+  top:55%;
+  left:60%;
+}
+/* section4
+------------------------------- */  
+.info-contents {
+  display: flex;
+  justify-content: center;
+}
+.w-line {
+    margin: 2em 0;
+}
+
+.small {
+  font-size: 20px;
+}
+.big {
+  font-size: 28px;
+}
+.info {
+  padding-top: 2em;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+/* footer
+------------------------------- */  
+footer {
+  background-color: rgba(103,142,160,0.17);
+  height: 120px;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+@media (max-width: 700px) {
+    .pc-only {
+        display:none;
+    }
+    .sp-only {
+      display: block;
+    }
+    #fv {
+      background-image: url(images/fv-SP.png);
+      background-size: cover;
+      background-position: center 70%;
+      min-height: 100vh;
+    }
+    .fv-p {
+        font-size:28px;
+        text-align: center;
+    }
+    .fv-ttl {
+        font-size:40px;
+        text-align: center;
+    }
+    .menu .logo {
+      width: 85px;
+    }
+    .sns-list img{
+    width: 35px;
+    }
+    .sns-list{
+      padding-left: 15px;
+    }
+    #section1 {
+      background-image: url(images/section1-bg-sp.png);
+      background-size: cover;
+    }
+    .container {
+        flex-flow: column;
+    }
+    .subttl-sentence {
+      font-size: 27px;
+    }
+    .subttl {
+      padding: 3em;
+      margin: 0 auto;      
+    }
+    #section1 .subttl {
+      transform: translate(-50px);
+    }
+    .sentence {
+      font-size: 16px;
+    }
+    .vertical-p-img {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #section1 img {
+      width: 80%;
+      margin: 3em auto;
+    }
+    #section2 {
+      background-image: url(images/section2-bg-sp.png);
+      background-size: cover;
+    }
+    #section2 .subttl {
+      transform: translate(50px);
+    }
+    #section2 .container {
+      flex-flow: column;
+    }
+    #section2 img {
+      padding: 2em 0;
+    }
+    #section3 {
+      background-image: url(images/section3-bg-sp.png);
+      background-size: cover;
+      min-height: 1400px;
+    }
+    .food-item {
+      position: static;
+      justify-content: center;
+      margin: 2em;
+    }
+    .food-item img {
+      width: 200px;
+	  display:block;
+    }
+    .food-p p {
+      width: 200px;
+    }
+    .number {
+      font-size: 60px;
+		width:65px
+    }
+    .sushi  {
+      flex-direction: row;
+      text-align: right;
+	  justify-content:start;
+    }
+    .karaage  {
+      flex-direction: row-reverse;
+      text-align: left;
+		justify-content:end;
+    }
+    .pizza{
+      flex-direction: row;
+      text-align: right;
+    }
+    .cheese {
+      flex-direction: row-reverse;
+      text-align: left;
+    }
+    .info-contents {
+      flex-direction: column;
+    }
+    .bottle {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+    }
+    .info {
+      text-align: center;
+    }
+    footer {
+      height: 160px;
+    }
+    .footer-items {
+      flex-direction: column;
+    }
+    .footer-items img {
+      display: none;
+    }
+    .footer-items p {
+      padding-top: 12px;
+    }
+}
+
+

@@ -1,0 +1,645 @@
+@charset "UTF-8";
+
+
+
+/* 共通部分
+------------------------------- */
+html {
+
+  font-size: 100%;
+
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: #3d3d3d;
+}
+a {
+  text-decoration: none !important ;
+}
+a:hover {
+  color: #F9A826;
+}
+image {
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.ttl {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin:4rem 0   
+}
+
+
+
+/* ヘッダー
+------------------------------- */
+.logo {
+  width: 90px;
+  margin-top: 12px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 40px;
+}
+.nav-list li {
+  margin-left: 36px;
+}
+.nav-list a {
+  color: #3d3d3d;
+}
+.nav-list a:hover {
+  color: #F9A826;
+}
+.page-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.page-header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 999;
+}
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+
+
+/* MAIN-TITLE
+------------------------------- */
+.mv {
+  background-color: #f5f5f5;
+}
+.ttl-img {
+  width: 58%;
+  margin: 0 auto;
+}
+.name {
+  width: 38%;
+  margin: 0 auto;
+}
+.name p {
+  font-size: 1.5rem;
+  margin-top: 200px;
+}
+.name h2{
+  width: 260px;
+  font-size: 2rem;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.mv .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+/* ABOUT
+------------------------------- */
+.about-area {
+  position: relative;
+}
+.about-text {
+  width: 46%;
+}
+
+.about-text p {
+  margin-top: 1rem;
+}
+.about .ttl {
+  width: 100px;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.about-img {
+  width: 50%;
+  margin-top: 3%;
+}
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.about-illust {
+  position: absolute;
+  top: 55%;
+  z-index: -1;
+  width: 50%;
+}
+
+.view_btn  {
+  display: block;
+  border-bottom:dashed 2px;
+  position: relative;
+  width: 60%;
+  margin: 5% 0 0 auto;
+}
+.view_btn a:hover {
+  color: #F9A826;
+}
+.btn_text {
+  margin: 0 0 0 70%;
+  color: #3d3d3d;
+  font-size: 1.2rem;
+}
+
+.lineArrow::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #3d3d3d;
+  position: absolute;
+  box-sizing: border-box;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: top right;
+  right: -1px;
+}
+
+
+/* WORKS
+------------------------------- */
+#works .ttl {
+  width: 110px;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+
+#works .wrapper {
+  margin-top: 10rem;
+}
+.item img {
+  max-width: 90%;
+}
+.item img:hover {
+  opacity: 0.8;
+}
+
+
+.slide_area {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 5rem;
+}
+ 
+.slick-arrow {
+  position:absolute;
+  bottom: -30px;
+  cursor: pointer;
+  width: 40px;
+}
+.prev-arrow {
+  transform: scale(-1,1);
+  left: 0;
+  z-index: 1;
+}
+.next-arrow{
+  right: 0;
+}
+
+/* CONTACT
+------------------------------- */
+.contact .ttl {
+  width: 130px;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-contact  {
+  display: block;
+  width: 250px;
+  margin: 2rem auto;
+}
+.btn-contact:hover {
+  opacity: 0.8;
+}
+.contact  {
+  margin: 5rem auto;
+  position: relative;
+}
+.contact-illust {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+}
+
+/* logo-story
+------------------------------- */
+.logo-story {
+  background-color: #E3E3E3;
+}
+.big-logo {
+  margin: auto 0;
+  width: 48%;
+
+}
+.big-logo img {
+  width: 300px;
+  display: block;
+}
+.logo-sentence {
+  width: 48%;
+}
+.logo-sentence p {
+  padding: 1rem;
+}
+.logo-story .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 12% 8% 3% 8%; 
+}
+
+/* detailed-about
+------------------------------- */
+.detailed-about .ttl {
+  width: 100px;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.detailed-img {
+  width: 48%;
+  order: 1;
+}
+.detailed-img img {
+  display: block;
+}
+.about-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.detailed-sentence {
+  width: 48%;
+  order: 2;
+}
+.detailed-sentence p {
+  margin: 1rem 0;
+}
+.detailed-sentence .like {
+  margin: 3.5rem 0
+}
+
+/*skills
+------------------------------- */
+.skills .ttl {
+  width: 100px;
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.skills-contents {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.skill-list  h3{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: normal;
+  padding: 0.5rem;
+}
+.skill-img {
+  width: 250px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.skill-list p {
+  width: 250px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.skill-list {
+  border: solid 1.5px #3d3d3d;
+  width: 300px;
+}
+
+/*work-child
+------------------------------- */
+.work-ttl {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.work-ttl .ttl {
+  background: linear-gradient(to top, rgba(249,168,38,0.7) 0% 50%, rgba(0,0,0,0) 50% 100%);
+}
+.work-child p {
+  margin: auto 0;
+}
+.work-img {
+  display: block;
+  margin: 5% auto;
+  max-width: 70%;
+}
+table {
+  margin: 8rem auto 4rem ;
+}
+th,td {
+  padding: 2rem;
+  border-bottom: #3d3d3d dashed 1px;
+}
+th {
+  padding-right: 120px;
+  text-align: left;
+  font-weight: normal;
+  width: 40%;
+}
+.child-slide { 
+  width: 80%;
+  margin: 15% auto;
+}
+
+.btn-prev {
+  display: block;
+  margin: 0 auto 8rem ;
+  width: 250px;
+}
+.btn-prev:hover {
+  opacity: 0.8;
+}
+.gotoPage-area {
+  display: flex;
+  justify-content: end;
+}
+.gotoPage {
+  color: #3d3d3d;
+}
+.gotoPage-area img {
+  width: 25px;
+  margin:0 10px;
+}
+
+
+/*フッター
+------------------------------- */
+footer {
+  background: #E3E3E3;
+}
+footer .wrapper {
+  display: flex;
+  align-items: center;
+}
+.small-title {
+  font-size: 0.85rem;
+  width: 38%;
+  margin: 1rem 0;
+}
+.copyright {
+  width: 58%;
+}
+
+
+/* モバイル版
+------------------------*/
+@media (max-width: 600px) {
+  h2 p {
+    text-align: center;
+  }
+  .ttl {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+  }
+
+    /* ここから下がハンバーガーメニューに関するCSS */  
+
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .nav-content {
+    width: 80%;
+    height: 40%;
+    position: fixed;
+    top: 0; 
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: #fff;
+    transition: .5s;
+  }
+
+  /* メニュー黒ポチを消す */
+  .nav-list {
+    list-style: none;
+    flex-direction: column;
+  }
+  .nav-list li {
+    margin-bottom: 2rem;
+  }
+
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav-content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+
+  /*main-title*/
+  .mv .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .name p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .name h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .name {
+    width: 80%;
+    text-align: center;
+  }
+
+  /*about*/
+  .about-flex {
+    flex-direction: column;
+  }
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+  .about-img {
+    margin: 0 0 0 auto;
+  } 
+  .about-illust {
+    width: 60%;
+    position: absolute;
+    top: 380px;
+  }
+  .view_btn {
+    margin: 10% 0 0 auto;
+  }
+  .btn_text {
+    margin: 0 0 0 45%;
+  }
+
+  /*works*/
+  .slide img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #works .wrapper {
+    margin-top: 5rem;
+  }
+  /*contact*/
+  .btn-contact {
+    width: 200px;
+  }
+  .contact-illust {
+    top: 70%;
+  }
+
+  /*logo-story*/
+  .logo-story .wrapper {
+    flex-direction: column;
+  }
+  .big-logo {
+    width: 100%;
+  }
+  .big-logo img {
+    width: 180px;
+    margin: 100px auto 0;
+  }
+  .logo-sentence {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .logo-sentence p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  .about-contents {
+    flex-direction: column;
+  }
+  /*detailed-about*/
+  .detailed-img {
+    width: 100%;
+  }
+  .detailed-img img {
+    width: 220px;
+    margin: 0 auto;
+  }
+  .detailed-sentence {
+    width: 100%;
+    padding: 0 4%;
+  }
+  /*skills*/
+  .skills-contents {
+    flex-direction: column;
+  }
+  .skill-list {
+    margin: 1rem auto;
+  }
+  .skill-list p {
+    padding:4%;
+  }
+
+  /*work-child*/
+  .work-ttl {
+    flex-direction: column;
+    text-align: center;
+  }
+  .work-img {
+    max-width: 90%;
+  }
+  table {
+    width: 100%;
+    margin: 1rem auto;
+
+  }
+  th,td {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  .work-child .ttl {
+    width: 250px;
+  }
+  .work-img {
+    margin: 3rem auto;
+  }
+  .btn-prev {
+    width: 200px;
+    margin: 2rem auto;
+  }
+
+
+  /*フッター*/
+  footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .small-title {
+    text-align: center;
+    margin: 0.5rem 0 ;
+  }
+  
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin:0.5rem 0;
+  }
+}
