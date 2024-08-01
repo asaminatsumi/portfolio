@@ -384,7 +384,6 @@ th {
 .pdf {
   display: block;
   margin: 3rem auto;
-
 }
 
 
@@ -625,13 +624,18 @@ footer .wrapper {
     width: 250px;
   }
   .work-img {
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   .btn-prev {
     width: 200px;
     margin: 2rem auto;
   }
-
+  .pdf {
+  width: 90%;
+  }
+  .subttl h3 {
+    margin: 2rem auto;
+  }
 
   /*フッター*/
   footer .wrapper {
